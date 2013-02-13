@@ -11,4 +11,4 @@ gem 'rack-rewrite'
 gem 'redcarpet'
 gem 'RedCloth'
 gem 'sass'
-
+gem 'compass'
