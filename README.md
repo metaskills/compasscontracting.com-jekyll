@@ -18,7 +18,7 @@ $ echo "#!/usr/bin/env zsh
 
 ```shell   
 $ echo "#!/usr/bin/env zsh
-/Users/kencollins/Repositories/compasscontracting.come/tasks/deploy" > .git/hooks/post-push
+/Users/kencollins/Repositories/compasscontracting.com/tasks/deploy" > .git/hooks/post-push
 ```
 
 
