@@ -1,0 +1,26 @@
+#!/usr/bin/env zsh
+
+# Build and deploy to static site github repo.
+
+./tasks/jekyll 
+
+cd ~/Repositories/compasscontracting.github.com
+git checkout master
+git branch -D master_me
+git pull
+git checkout -b master_me
+
+cd ~/Repositories/compasscontracting.com
+rsync -az --delete --exclude '.git' _site/ ~/Repositories/compasscontracting.github.com 
+
+cd ~/Repositories/compasscontracting.github.com
+git add . 
+git commit -a -m "Automatic deploy commit."
+git checkout master
+git merge master_me
+git push origin master
+if [[ -f .git/hooks/post-push ]]
+then
+  .git/hooks/post-push
+fi
+git checkout master_me
