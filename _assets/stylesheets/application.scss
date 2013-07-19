@@ -1,0 +1,104 @@
+@charset "UTF-8";
+@import "compass";
+@import "compass/layout";
+@import "compass/css3/user-interface";
+
+
+/* Variables */
+
+$cBrown:    #993300;
+$cBurgandy: #660000;
+$cNavy:     #000033;
+$cTan:      #F1CE85;
+
+$widthLeft:   180px;
+$widthCenter: 690px;
+$widthRight:   85px;
+$widthPage:   $widthLeft + $widthCenter + $widthRight;
+
+$heightLeftTop: 415px;
+
+
+/* Silent Classes */
+
+%bs-border-box { @include box-sizing(border-box); }
+%bc-border-box { @include background-clip(border-box); }
+%bo-border-box { @include background-origin(border-box); }
+
+
+/* Main */
+
+@include global-reset();
+
+@each $el in elements-of-type('block') { 
+  #{$el} { @extend %bs-border-box; }
+}
+
+html { 
+  color: black;
+  background-color: black;
+  //font-family: Tahoma, Geneva, sans-serif;
+  font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
+}
+
+/* Layout */
+
+.page {
+  width: $widthPage;
+  margin: 0 auto 30px auto;
+  position: relative;
+  background-color: white; }
+
+.page-left {
+  width: $widthLeft;
+  position: relative;
+  height: 100%; }
+  //@include stretch-y;
+  .page-left-top {
+    width: $widthLeft;
+    background-color: $cBrown;
+    height: $heightLeftTop;
+    overflow: visible;
+    .nav-sections { position: absolute; bottom: 0; left: 0; } }
+    .page-left-top-bg {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 213px; }
+    .page-left-top-logo {
+      position: absolute;
+      top: 23px;
+      left: 20px;
+      width: 135px; }
+  .page-left-bottom {
+    //display: table-cell;
+    width: $widthLeft; }
+
+.page-center {
+  width: $widthCenter;
+  position: absolute;
+  top: 0px;
+  left: $widthLeft; }
+  .page-center-content {
+    font-size: 13px;
+    line-height: 18px;
+    padding: 35px; }
+
+.page-right {
+  width: $widthRight;
+}
+
+
+/* General */
+
+p { margin-bottom: 15px; }
+
+
+/* Nav Sections */
+
+.nav-sections {
+  width: $widthLeft * 0.75;
+  background-color: $cBurgandy;
+  color: $cTan;
+}
+

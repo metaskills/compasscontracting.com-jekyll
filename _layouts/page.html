@@ -1,13 +1,37 @@
 <!DOCTYPE HTML>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <title>Compass Contracting, Inc. - {{ page.title }}</title>
-    {% include head.html %}
-  </head>
+  {% include head.html %}
   <body>
-    <section id="content">
-      {{ content }}
+    <section class="page">
+
+      <section class="page-left">
+        <section class="page-left-top">
+          <img class="page-left-top-bg" src="{% asset_path page-left-top.jpg %}">
+          <img class="page-left-top-logo" src="{% asset_path compass_contracting_logo.png %}">
+          <nav class="nav-sections">
+            <ul>
+              <li>About Us</li>
+              <li>Newsletters</li>
+              <li>Contact Us</li>
+              <li>Client List</li>
+              <li>Services</li>
+            </ul>
+          </nav>
+        </section>
+        <section class="page-left-bottom">
+          
+        </section>
+      </section>
+
+      <section class="page-center">
+        <article class="page-center-content">
+          {{ content }}
+        </article>
+      </section>
+
+      <section class="page-right">
+      </section>
+
     </section>
   </body>
 </html>

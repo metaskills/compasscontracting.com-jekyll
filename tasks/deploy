@@ -1,5 +1,3 @@
-#!/usr/bin/env zsh
-
 # Build and deploy to static site github repo.
 
 ./tasks/jekyll 

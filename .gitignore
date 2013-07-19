@@ -1,5 +1,3 @@
-_site/
-_cache/
-.bundle
+_site
+_cache/*
 .sass-cache
-tmp
