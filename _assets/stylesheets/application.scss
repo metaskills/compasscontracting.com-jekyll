@@ -37,7 +37,6 @@ $heightLeftTop: 415px;
 html { 
   color: black;
   background-color: black;
-  //font-family: Tahoma, Geneva, sans-serif;
   font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
 }
 
@@ -46,37 +45,40 @@ html {
 .page {
   width: $widthPage;
   margin: 0 auto 30px auto;
-  position: relative;
-  background-color: white; }
+  background-color: white;
+  @include clearfix; }
 
 .page-left {
-  width: $widthLeft;
-  position: relative;
-  height: 100%; }
   //@include stretch-y;
+  width: $widthLeft;
+  float: left; }
   .page-left-top {
     width: $widthLeft;
     background-color: $cBrown;
     height: $heightLeftTop;
-    overflow: visible;
-    .nav-sections { position: absolute; bottom: 0; left: 0; } }
-    .page-left-top-bg {
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 213px; }
-    .page-left-top-logo {
-      position: absolute;
-      top: 23px;
-      left: 20px;
-      width: 135px; }
+    overflow: visible; }
+    .page-left-top-container {
+      width: $widthLeft;
+      height: $heightLeftTop;
+      position: relative; 
+      .nav-sections { position: absolute; bottom: 0; left: 0; } }
+      .page-left-top-bg {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 213px; }
+      .page-left-top-logo {
+        position: absolute;
+        top: 23px;
+        left: 20px;
+        width: 135px; }
   .page-left-bottom {
-    //display: table-cell;
-    width: $widthLeft; }
+    width: $widthLeft;
+    @include stretch-y; }
 
 .page-center {
   width: $widthCenter;
-  position: absolute;
+  float: left;
   top: 0px;
   left: $widthLeft; }
   .page-center-content {
@@ -86,6 +88,7 @@ html {
 
 .page-right {
   width: $widthRight;
+  float: left;
 }
 
 
