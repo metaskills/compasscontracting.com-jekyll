@@ -12,6 +12,7 @@ $cNavy:     #000033;
 $cTan:      #F1CE85;
 
 $widthLeft:   180px;
+$widthLeftDsg: 23px;
 $widthCenter: 690px;
 $widthRight:   85px;
 $widthPage:   $widthLeft + $widthCenter + $widthRight;
@@ -49,18 +50,15 @@ html {
   @include clearfix; }
 
 .page-left {
-  //@include stretch-y;
-  width: $widthLeft;
-  float: left; }
-  .page-left-top {
-    width: $widthLeft;
-    background-color: $cBrown;
-    height: $heightLeftTop;
-    overflow: visible; }
+  float: left;
+  width: $widthLeft; }
+  .page-left-top { 
+    float: left; }
     .page-left-top-container {
       width: $widthLeft;
       height: $heightLeftTop;
       position: relative; 
+      overflow: visible;
       .nav-sections { position: absolute; bottom: 0; left: 0; } }
       .page-left-top-bg {
         position: absolute;
@@ -74,7 +72,13 @@ html {
         width: 135px; }
   .page-left-bottom {
     width: $widthLeft;
-    @include stretch-y; }
+    float: left;
+    height: 300px;
+    background-size: $widthLeft auto;
+    background-image: image-url('page-left-bottom-bg.jpg');
+    background-repeat: repeat-y; }
+    .page-left-bottom-img {
+      width: $widthLeft; }
 
 .page-center {
   width: $widthCenter;
