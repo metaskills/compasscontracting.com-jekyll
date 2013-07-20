@@ -107,5 +107,27 @@ p { margin-bottom: 15px; }
   width: $widthLeft * 0.75;
   background-color: $cBurgandy;
   color: $cTan;
+  a, 
+  a:link, 
+  a:visited
+  a:active { 
+    color: $cTan; font-size: 13px; line-height: 20px; text-decoration: none;
+    font-family: "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Geneva, Verdana, sans-serif;
+  }
+  a:hover  { color: white; }
+  a.home {
+    display: block;
+    position: absolute;
+    text-transform: uppercase;
+    left: -12px;
+    top: 12px;
+    white-space: nowrap;
+    @include transform2d(rotate(270deg));
+    background-color: black;
+    line-height: $widthLeftDsg;
+  }
+  ul {
+    margin: 5px 0 5px 30px;
+  }
 }
 
