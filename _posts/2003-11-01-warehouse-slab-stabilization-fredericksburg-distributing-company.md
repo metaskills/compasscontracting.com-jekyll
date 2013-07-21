@@ -7,15 +7,12 @@ header: Warehouse Slab Stabilization, Fredericksburg Distributing Company
 <ol class="newsletter-photos w150">
   <li>
     <img src="{{ 'warehouse-slab-01.jpg' | asset_path }}" alt="Peristaltic-type pump used to place SikaGrout 212 into under-slabs voids.">
-    <aside>Peristaltic-type pump used to place SikaGrout 212 into under-slabs voids.</aside>
   </li>
   <li>
     <img src="{{ 'warehouse-slab-02.jpg' | asset_path }}" alt="Grout being pumped into one hole and emerging out of next down line hole, on opposite side of joint.">
-    <aside>Grout being pumped into one hole and emerging out of next down line hole, on opposite side of joint.</aside>
   </li>
   <li>
     <img src="{{ 'warehouse-slab-03.jpg' | asset_path }}" alt="Slab area after grouting completion. Fill holes are struck off flush wit the finished floor.">
-    <aside>Slab area after grouting completion. Fill holes are struck off flush wit the finished floor.</aside>
   </li>
 </ol>
 

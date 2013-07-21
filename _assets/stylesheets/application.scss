@@ -50,6 +50,7 @@ $content-bottom-margin:       15px;
 html { 
   color: black;
   background-color: black;
+  padding-bottom: 40px;
   @extend %font-family-main;
 }
 
@@ -61,7 +62,7 @@ a:hover { text-decoration: underline; }
 
 .page {
   width: $page-width;
-  margin: 0 auto 30px auto;
+  margin: 0 auto;
   background-color: white;
   @include clearfix; }
 
@@ -144,7 +145,7 @@ a:hover { text-decoration: underline; }
       width: $services-text-width;
       margin-top: -$page-center-top-margin + $page-right-header-height - $page-center-top-brd-height;
       margin-right: -$page-center-margin;
-      margin-bottom: 20px;
+      padding-bottom: 20px;
       margin-left: 20px; }
 
 .page-right {
@@ -268,7 +269,8 @@ strong  { font-weight: bold; }
 /* Newsletters */
 
 .newsletters {
-  h3 { width: 50%; margin-bottom: 7px; } }
+  h3 { width: 50%; margin: 0 0 7px 0; }
+  li { margin-bottom: 15px; } }
 
 .newsletter-photos {
   float: right;
@@ -279,3 +281,5 @@ strong  { font-weight: bold; }
 .newsletter-photos.w100 { width: 100px; img { width: 100px; } }
 .newsletter-photos.w150 { width: 150px; img { width: 150px; } }  
 .newsletter-photos.w200 { width: 200px; img { width: 200px; } }  
+.newsletter-photos.w225 { width: 225px; img { width: 225px; } }  
+
