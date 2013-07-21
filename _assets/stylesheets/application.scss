@@ -113,7 +113,7 @@ a:hover { text-decoration: underline; }
       background-color: $color-navy;
       top: -$page-center-top-brd-height;
       padding: 11px 70px 7px 37px; } 
-    .arch-box-brown-1 {
+    .arch-box-tan-1 {
       $width: 300px;
       position: absolute;
       width: $width;
@@ -121,7 +121,7 @@ a:hover { text-decoration: underline; }
       top: 0px;
       right: 0px;
       background-color: $color-tan; }
-    .arch-box-brown-2 {
+    .arch-box-tan-2 {
       position: absolute;
       width: 200px;
       height: $page-center-top-brd-height * 4;
@@ -134,7 +134,14 @@ a:hover { text-decoration: underline; }
       height: $page-center-top-brd-height * 2;
       top: 0px;
       right: 0px;
-      background-color: $color-navy; } }
+      background-color: $color-navy; }
+    .arch-box-tan-3 {
+      position: absolute;
+      width: $page-center-top-brd-height + 2px;
+      height: 200px;
+      top: 440px;
+      left: 0px;
+      background-color: $color-tan; } }
   .page-center-content {
     font-size: 14px;
     line-height: 20px;
@@ -147,6 +154,10 @@ a:hover { text-decoration: underline; }
       margin-right: -$page-center-margin;
       padding-bottom: 20px;
       margin-left: 20px; }
+    .page-footer {
+      padding: $page-center-margin 0 10px $page-center-margin;
+      font-weight: bold;
+      font-size: 11px; }
 
 .page-right {
   width: $page-right-width;
@@ -155,12 +166,12 @@ a:hover { text-decoration: underline; }
   overflow: visible; }
   .page-right-header {
     height: $page-center-top-brd-height * 5;
-    background-color: $color-burgandy;
+    background-color: $color-brown;
     .arch-box-navy-1 { 
       height: $page-center-top-brd-height * 3;
       background-color: $color-navy; } }
   .page-right-services {
-    background-color: $color-burgandy;
+    background-color: $color-brown;
     ul {
       width: $services-width;
       margin-left: -$services-text-width; }
@@ -211,7 +222,23 @@ a:hover { text-decoration: underline; }
           &.structural-concrete-repairs { background-image: image-url('services/structural-concrete-repairs.jpg'); }
           &.carbon-fiber-structural-reinforcement-systems { background-image: image-url('services/carbon-fiber-structural-reinforcement-systems.jpg'); }
         } } } }
-
+  .page-right-bottom {
+    position: relative;
+    border-top: 10px solid $color-brown;
+    .arch-box-burgandy-1 {
+      position: absolute;
+      width: $page-right-width * 0.8;
+      height: $page-right-width * 0.5;
+      top: 0;
+      left: 0;
+      background-color: $color-burgandy; }
+    .arch-box-brown-1 {
+      position: absolute;
+      width: $page-right-width / 4;
+      height: $page-right-width * 1.5;
+      top: 0;
+      left: 0;
+      background-color: $color-brown; } }
 
 
 
