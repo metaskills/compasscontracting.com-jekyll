@@ -8,24 +8,21 @@ Compass Contracting, Inc. is able to offer our customers a variety of services. 
 
 ### (please choose from one of the following)
 
-<ol class="newsletter-photos">
+<ol class="newsletter-photos w225">
   <li>
     <a href="/services/expansion-joint-systems.html">
-      <img width="220" height="136" src="{{ 'services-photos/expansion-joints.jpg' | asset_path }}" alt="Expansion Joints">
+      <img src="{{ 'services-photos/expansion-joints.jpg' | asset_path }}" alt="Expansion Joints">
     </a>
-    <aside>Expansion Joints</aside>
   </li>
   <li>
     <a href="/services/structural-concrete-repairs.html">
-      <img width="220" height="136" src="{{ 'services-photos/concrete-restoration.jpg' | asset_path }}" alt="Concrete Restoration">
+      <img src="{{ 'services-photos/concrete-restoration.jpg' | asset_path }}" alt="Concrete Restoration">
     </a>
-    <aside>Concrete Restoration</aside>
   </li>
   <li>
     <a href="/services/water-repellants-and-waterproof-coatings.html">
-      <img width="220" height="136" src="{{ 'services-photos/sprayed-in-place.jpg' | asset_path }}" alt="Sprayed In-Place Polyurethane Foam Roofing">
+      <img src="{{ 'services-photos/sprayed-in-place.jpg' | asset_path }}" alt="Sprayed In-Place Polyurethane Foam Roofing">
     </a>
-    <aside>Sprayed In-Place Polyurethane<br/>Foam Roofing</aside>
   </li>
 </ol>
 
