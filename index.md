@@ -14,7 +14,7 @@ title: Compass Contracting, Inc.
   </p>
 
   <p>
-    What distinguishes Compass Contracting, Inc. is our ability to approach a problem individually and creatively. Because each problem requires teamwork, we have specialists in every area of construction technology to solve problems, to renovate, restore, or repair your structure when weather, age, and use have tken their toll.
+    What distinguishes Compass Contracting, Inc. is our ability to approach a problem individually and creatively. Because each problem requires teamwork, we have specialists in every area of construction technology to solve problems, to renovate, restore, or repair your structure when weather, age, and use have taken their toll.
   </p>
 
   <p>
