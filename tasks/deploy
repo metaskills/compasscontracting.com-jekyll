@@ -3,7 +3,7 @@
 ./tasks/jekyll 
 sleep 1
 
-local message=$(git log -1 --pretty=%B)
+message=$(git log -1 --pretty=%B)
 
 cd ~/Repositories/compasscontracting.com
 git checkout gh-pages
