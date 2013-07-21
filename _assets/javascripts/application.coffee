@@ -17,6 +17,11 @@ Compass =
     @pageRight.css 'height', "#{pageHeight}px"
     @pageCenterServicesTextPadding.css 'height', "#{pageRightServicesHeight}px"
 
-
 Compass.resizeElements()
 $(window).resize(Compass.resizeElements);
+
+$('.page-right-services li').click ->
+  li = $(this)
+  page = li.find('aside').attr('class')
+  window.location.href = "/services/#{page}.html"
+
