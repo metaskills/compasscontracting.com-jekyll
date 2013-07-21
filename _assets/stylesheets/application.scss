@@ -253,6 +253,18 @@ p       { margin-bottom: $content-bottom-margin; }
 strong  { font-weight: bold; }
 
 
+/* Home */
+
+#home {
+  h1              { width: 100%; text-transform: uppercase; @extend %font-family-main; margin-bottom: 0; }
+  h1:nth-child(1) { font-size: 24px; font-weight: bold; }
+  h1:nth-child(2) { font-size: 19px; margin-bottom: $content-bottom-margin; }
+}
+
+#whatsnew {
+
+}
+
 /* Nav Sections */
 
 .nav-sections {
@@ -297,9 +309,9 @@ strong  { font-weight: bold; }
 
 /* Newsletters */
 
-.newsletters {
-  h3 { width: 50%; margin: 0 0 7px 0; }
-  li { margin-bottom: 15px; } }
+.newsletter {
+  margin-bottom: 15px;
+  h3 { width: 50%; margin: 0 0 7px 0; } }
 
 .newsletter-photos {
   float: right;
