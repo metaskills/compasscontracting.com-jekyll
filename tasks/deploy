@@ -17,8 +17,8 @@ rsync -az --delete --exclude '.git' _site/ ~/Repositories/compasscontracting.com
 cd ~/Repositories/compasscontracting.com
 git add . 
 echo "Using commit message:"
-echo $message
-git commit -a -m $message
+echo "$message"
+git commit -m "$message"
 git checkout gh-pages
 git merge gh-pages-me
 git push origin gh-pages
