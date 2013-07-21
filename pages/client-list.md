@@ -4,7 +4,9 @@ title: Client List
 header: Compass Contracting, Inc.
 ---
 
-## Municipalities
+### Municipalities
+
+<img class="client-photo" src="{{ 'clients/williamsburg.jpg' | asset_path }}">
 
 * City of Norfolk, VA
 * City of Newport News, VA
@@ -15,7 +17,7 @@ header: Compass Contracting, Inc.
 * City of Salem, VA
 * City of Portsmouth, VA
 
-## Health Care Facilities
+### Health Care Facilities
 
 * OBICI Hospital - Suffolk, VA
 * Chesapeake General Hospital - Chesapeake, VA
@@ -27,7 +29,9 @@ header: Compass Contracting, Inc.
 * Hammes Sentara - Newport News, VA
 * Mary Immaculate Hospital - Newport News, VA
 
-## Educational Institutions
+### Educational Institutions
+
+<img class="client-photo" src="{{ 'clients/odu.jpg' | asset_path }}">
 
 * Old Dominion University
 * Norfolk, VA
@@ -47,7 +51,7 @@ header: Compass Contracting, Inc.
 * Fork Union Military Academy - Fork Union, VA
 * Hampden - Sydney College - Hampden - Sydney, VA
 
-## Utilities
+### Utilities
 
 * Dominion Power - VA & North Carolina
 * AT&T - Norfolk, VA
@@ -55,7 +59,9 @@ header: Compass Contracting, Inc.
 * Hampton Roads Sanitation District - VA Beach, VA
 * Hopewell Waste Water Treatment Plant - Hopewell, VA
 
-## Manufacturing Facilities
+### Manufacturing Facilities
+
+<img class="client-photo" src="{{ 'clients/anheuser-busch-brewery.jpg' | asset_path }}">
 
 * Dan River Mills - Danville, VA
 * Anheuser Busch - Williamsburg, VA
@@ -73,14 +79,16 @@ header: Compass Contracting, Inc.
 * Interbake Foods - Richmond, VA
 * Plasser American - Chesapeake, VA
 
-## Industrial Facilities
+### Industrial Facilities
 
 * Newport news Shipbuilding / Northrup Grumman - Newport news, VA
 * Virginia International Terminals - Newport News, VA
 * BASF Corporation - Portsmouth, VA
 * Sara Lee Corporation - Suffolk, VA
 
-## Federal Government Facilities
+### Federal Government Facilities
+
+<img class="client-photo" src="{{ 'clients/jeffersonlabs.jpg' | asset_path }}">
 
 * NASA - Hampton, VA
 * Jefferson Labs - Newport News, VA
@@ -100,7 +108,7 @@ header: Compass Contracting, Inc.
 * Federal Reserve Bank - Richmond, VA
 * Cheatham Annex - York County, VA
 
-## Cultural Facilities
+### Cultural Facilities
 
 * Chrysler Museum - Norfolk, VA
 * Jamestown / Yorktown Foundation - James City County, VA
@@ -110,7 +118,9 @@ header: Compass Contracting, Inc.
 * Harrison Opera House - Norfolk, VA
 * Roper Performing Arts Center - Norfolk, VA
 
-## Hotel / Entertainment Facilities
+### Hotel / Entertainment Facilities
+
+<img class="client-photo" src="{{ 'clients/kingsmill.jpg' | asset_path }}">
 
 * Busch Gardens
 * Williamsburg, VA
@@ -134,7 +144,7 @@ header: Compass Contracting, Inc.
 * Ramada Inn Conference Center - Virginia Beach, VA
 * Marriott Manor Club
 
-## Commercial / Public Service Properties
+### Commercial / Public Service Properties
 
 * Trigon Headquarters - Richmond, VA
 * Norfolk International Airport - Norfolk, VA
