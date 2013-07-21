@@ -14,4 +14,4 @@ We have an active on-site safety program, which is attuned not only to the safet
 
 We would gladly welcome the opportunity to meet with you and discuss your restoration needs.
 
-
+<img src="{{ 'robert-vandivender.png' | asset_path }}"><br/>**Robert N. VanDivender**<br/>President
