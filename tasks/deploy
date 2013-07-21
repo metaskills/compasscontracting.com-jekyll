@@ -2,6 +2,8 @@
 
 ./tasks/jekyll 
 
+local message=$(git log -1 --pretty=%B)
+
 cd ~/Repositories/compasscontracting.com
 git checkout gh-pages
 git branch -D gh-pages-me
@@ -13,7 +15,7 @@ rsync -az --delete --exclude '.git' _site/ ~/Repositories/compasscontracting.com
 
 cd ~/Repositories/compasscontracting.com
 git add . 
-git commit -a -m "Automatic deploy commit."
+git commit -a -m $message
 git checkout gh-pages
 git merge gh-pages-me
 git push origin gh-pages
