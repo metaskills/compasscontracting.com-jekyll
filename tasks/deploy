@@ -2,23 +2,19 @@
 
 ./tasks/jekyll 
 
-cd ~/Repositories/compasscontracting.github.com
-git checkout master
-git branch -D master_me
+cd ~/Repositories/compasscontracting.com
+git checkout gh-pages
+git branch -D gh-pages-me
 git pull
-git checkout -b master_me
+git checkout -b gh-pages-me
+
+cd ~/Repositories/compasscontracting.com-jekyll
+rsync -az --delete --exclude '.git' _site/ ~/Repositories/compasscontracting.com 
 
 cd ~/Repositories/compasscontracting.com
-rsync -az --delete --exclude '.git' _site/ ~/Repositories/compasscontracting.github.com 
-
-cd ~/Repositories/compasscontracting.github.com
 git add . 
 git commit -a -m "Automatic deploy commit."
-git checkout master
-git merge master_me
-git push origin master
-if [[ -f .git/hooks/post-push ]]
-then
-  .git/hooks/post-push
-fi
-git checkout master_me
+git checkout gh-pages
+git merge gh-pages-me
+git push origin gh-pages
+git checkout gh-pages-me
