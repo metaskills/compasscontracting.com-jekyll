@@ -28,4 +28,4 @@ The construction material for expansion joints can be as simple as preformed pol
 
 Compass Contracting is licensed and an approved applicator for many types of preformed sealant and expansion joint systems. We can help our clients to select the most suitable type of joint by working in conjunction with our manufacturers.
 
-{% include services_footer.html %}
+{% include contact_us_footer.html %}

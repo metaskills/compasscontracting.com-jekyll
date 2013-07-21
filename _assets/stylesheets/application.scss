@@ -267,3 +267,9 @@ strong  { font-weight: bold; }
 
 .page-center-content ul { margin: 0 30px $content-bottom-margin 30px; list-style-type: square; }
 
+.table-form {
+  th, td {  }
+  th     { text-align: right; font-weight: bold; padding-right: 2px; }
+  td     { text-align: left; } }
+
+.contact-us-footer { margin-top: 40px; font-size: 11px; }

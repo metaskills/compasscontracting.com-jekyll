@@ -41,4 +41,4 @@ Drainage components can also be incorporated to enhance the performance of the o
 
 Compass Contracting is an approved applicator for many types of below-grade waterproofing systems. Selection of the proper waterproofing system is a critical component in the success of any below-grade project. An improper selection of materials can lead to future problems and result in unnecessary costs. We work with our clients and the manufacturers to insure that the proper system is selected and properly installed.
 
-{% include services_footer.html %}
+{% include contact_us_footer.html %}

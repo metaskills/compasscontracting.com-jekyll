@@ -32,4 +32,4 @@ Because of the complexity of creating a suitable and efficient growing environme
 
 Compass Contracting, Inc. is a manufacturer trained and authorized installer of these systems. If you would like further information on the Green Roof or Plaza Deck systems, please call or email us.
 
-{% include services_footer.html %}
+{% include contact_us_footer.html %}

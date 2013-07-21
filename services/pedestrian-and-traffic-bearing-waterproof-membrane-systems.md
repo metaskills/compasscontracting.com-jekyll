@@ -36,4 +36,4 @@ These waterproof membrane systems can be comprised of a single type of material,
 
 We are approved applicators for several manufacturers and as with all of the products and systems we install, we work closely with the manufacturers to insure that our clients receive the correct system to meet their needs.
 
-{% include services_footer.html %}
+{% include contact_us_footer.html %}
