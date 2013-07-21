@@ -179,7 +179,8 @@ html {
         display: table-cell;
         vertical-align: middle;
         padding-right: 10px;
-        @extend %font-family-links; }
+        @extend %font-family-links;
+        a, a:link, a:visited, a:active { color: $color-link; text-decoration: none; } }
       div.img {
         width: $page-right-width;
         height: $height;

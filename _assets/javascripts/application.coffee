@@ -18,7 +18,7 @@ Compass =
     @pageCenterServicesTextPadding.css 'height', "#{pageRightServicesHeight}px"
 
 Compass.resizeElements()
-$(window).resize(Compass.resizeElements);
+$(window).resize(Compass.resizeElements)
 
 $('.page-right-services li').click ->
   li = $(this)
