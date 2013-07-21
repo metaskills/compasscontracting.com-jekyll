@@ -53,6 +53,9 @@ html {
   @extend %font-family-main;
 }
 
+a, a:link, a:visited, a:active { color: $color-link; text-decoration: none; }
+a:hover { text-decoration: underline; }
+
 
 /* Layout */
 
@@ -250,5 +253,17 @@ strong  { font-weight: bold; }
 
 /* Misc Content */
 
+.service-index-photos {
+  float: right;
+  margin: 0 0 20px 20px;
+  li { margin-bottom: 10px; }
+  img {
+    width: 220px;
+    height: 136px;
+    border: 2px solid black; }
+  aside { text-align: center; font-weight: bold; font-size: 11px; } }
+
 .service-large { width: 250px; height: 250px; float: right; margin: 0 0 10px 10px; }
+
 .page-center-content ul { margin: 0 30px $content-bottom-margin 30px; list-style-type: square; }
+
