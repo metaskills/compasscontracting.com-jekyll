@@ -13,12 +13,12 @@ Setup git hooks.
 
 ```shell
 $ echo "#!/usr/bin/env zsh
-/Users/kencollins/Repositories/compasscontracting.com/tasks/jekyll" > .git/hooks/pre-commit
+/Users/kencollins/Repositories/compasscontracting.com-jekyll/tasks/jekyll" > .git/hooks/pre-commit
 ```
 
 ```shell   
 $ echo "#!/usr/bin/env zsh
-/Users/kencollins/Repositories/compasscontracting.com/tasks/deploy" > .git/hooks/post-push
+/Users/kencollins/Repositories/compasscontracting.com-jekyll/tasks/deploy" > .git/hooks/post-push
 ```
 
 
