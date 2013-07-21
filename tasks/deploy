@@ -1,6 +1,7 @@
 # Build and deploy to static site github repo.
 
 ./tasks/jekyll 
+sleep 1
 
 local message=$(git log -1 --pretty=%B)
 
