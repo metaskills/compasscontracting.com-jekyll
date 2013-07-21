@@ -54,4 +54,4 @@ There are many repair materials on the market today and it is important to selec
 
 Compass Contracting has the resources and experience to help our clients design the best solution for their concrete restoration problems. We draw upon our experience and product knowledge, in conjunction with our manufacturers, to provide the most appropriate and cost effective repairs. If there is a need for structural engineering services, Compass Contracting has worked with many of the areas top engineering firms and can assist our clients with this as well.
 
-{% include contact_us_footer.html %}
+{% include services_footer.html %}

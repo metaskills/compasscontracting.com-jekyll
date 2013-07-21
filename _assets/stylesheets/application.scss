@@ -137,8 +137,7 @@ a:hover { text-decoration: underline; }
   .page-center-content {
     font-size: 14px;
     line-height: 20px;
-    padding: $page-center-top-margin $page-center-margin $page-center-margin $page-center-margin;
-    h1 { width: 60%; line-height: 110%; } }
+    padding: $page-center-top-margin $page-center-margin $page-center-margin $page-center-margin; }
     .page-center-services-text-padding {
       float: right;
       width: $services-text-width;
@@ -217,8 +216,8 @@ a:hover { text-decoration: underline; }
 /* General */
 
 h1, h2, h3, h4, h5 { @extend %font-family-header; }
-h1 { font-size: 28px; margin-bottom: 28px; }
-h2 { font-size: 24px; margin-bottom: 24px; }
+h1 { font-size: 28px; margin-bottom: 28px; width: 60%; line-height: 110%; }
+h2 { font-size: 24px; margin-bottom: 24px; width: 60%; line-height: 110%; }
 h3, h4, h5, h6 { font-size: 16px; margin-bottom: 16px; }
 
 p       { margin-bottom: $content-bottom-margin; }

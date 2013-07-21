@@ -22,4 +22,4 @@ It would be erroneous to assume that weather alone is the cause of problems in m
 
 Compass Contracting can provide our clients with initial inspection surveys, auxiliary repairs to other building elements such as roofs, flashings & gutters, as well as any needed masonry repairs. We have experience working on both historical and contemporary structures.
 
-{% include contact_us_footer.html %}
+{% include services_footer.html %}

@@ -36,4 +36,4 @@ Compass Contracting is a certified applicator for Sika's carbon fiber product li
 
 If you would like more information on carbon fiber reinforcement or have a specific need you would like to discuss, please give us a call.
 
-{% include contact_us_footer.html %}
+{% include services_footer.html %}

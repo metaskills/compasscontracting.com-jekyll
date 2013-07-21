@@ -37,4 +37,4 @@ Using the wrong type of sealer or coating in the wrong application can result in
 
 Compass Contracting is an approved applicator for several different manufacturers and can help our clients to choose the best system for their needs. We also use our manufacturer's field representatives to assist in the proper selection of materials and for periodic inspections throughout the installation process.
 
-{% include contact_us_footer.html %}
+{% include services_footer.html %}
