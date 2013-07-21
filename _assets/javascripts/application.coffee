@@ -2,11 +2,21 @@
 
 Compass =
 
-  resizePageLeftBottomElement: ->
-    page = $('.page').height()
-    top  = $('.page-left-top').height()
-    $('.page-left-bottom').css 'height', "#{page-top}px"
+  page:                           $('.page')
+  pageLeftTop:                    $('.page-left-top')
+  pageLeftBottom:                 $('.page-left-bottom')
+  pageCenterServicesTextPadding:  $('.page-center-services-text-padding')
+  pageRight:                      $('.page-right')
+  pageRightServices:              $('.page-right-services')
+
+  resizeElements: ->
+    pageHeight = @page.height()
+    pageLeftTopHeight = @pageLeftTop.height()
+    pageRightServicesHeight = @pageRightServices.height()
+    @pageLeftBottom.css 'height', "#{pageHeight-pageLeftTopHeight}px"
+    @pageRight.css 'height', "#{pageHeight}px"
+    @pageCenterServicesTextPadding.css 'height', "#{pageRightServicesHeight}px"
 
 
-Compass.resizePageLeftBottomElement()
-$(window).resize(Compass.resizePageLeftBottomElement);
+Compass.resizeElements()
+$(window).resize(Compass.resizeElements);

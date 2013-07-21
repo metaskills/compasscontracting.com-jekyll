@@ -2,22 +2,32 @@
 @import "compass";
 @import "compass/layout";
 @import "compass/css3/user-interface";
+@include global-reset();
 
 
 /* Variables */
 
-$cBrown:    #993300;
-$cBurgandy: #660000;
-$cNavy:     #000033;
-$cTan:      #F1CE85;
+$color-brown:    #993300;
+$color-burgandy: #660000;
+$color-navy:     #000066;
+$color-tan:      #F1CE85;
+$color-link:     #0433FF;
 
-$widthLeft:   180px;
-$widthLeftDsg: 23px;
-$widthCenter: 690px;
-$widthRight:   85px;
-$widthPage:   $widthLeft + $widthCenter + $widthRight;
+$page-left-width:             180px;
+$page-left-black-bar-width:   23px;
+$page-left-top-height:        415px;
+$page-center-width:           690px;
+$page-center-top-brd-height:  5px;
+$page-center-margin:          35px;
+$page-center-top-margin:      60px;
+$page-right-width:            85px;
+$page-right-header-height:    $page-center-top-brd-height * 5;
+$page-right-service-width:    60px;
 
-$heightLeftTop: 415px;
+$page-width:                  $page-left-width + $page-center-width + $page-right-width;
+
+$services-text-width:         130px;
+$services-width:              $services-text-width + $page-right-width;
 
 
 /* Silent Classes */
@@ -26,37 +36,38 @@ $heightLeftTop: 415px;
 %bc-border-box { @include background-clip(border-box); }
 %bo-border-box { @include background-origin(border-box); }
 
+%font-family-main   { font-family: "Century Gothic", "CenturyGothic", "AppleGothic", sans-serif; }
+%font-family-header { font-family: "Gill Sans", "Gill Sans MT", "Calibri", sans-serif; }
+%font-family-links  { font-family: "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", "Geneva", Verdana, sans-serif; }
+
 
 /* Main */
 
-@include global-reset();
-
-@each $el in elements-of-type('block') { 
-  #{$el} { @extend %bs-border-box; }
-}
+@each $el in elements-of-type('block') {  #{$el} { @extend %bs-border-box; } }
 
 html { 
   color: black;
   background-color: black;
-  font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
+  @extend %font-family-main;
 }
+
 
 /* Layout */
 
 .page {
-  width: $widthPage;
+  width: $page-width;
   margin: 0 auto 30px auto;
   background-color: white;
   @include clearfix; }
 
 .page-left {
   float: left;
-  width: $widthLeft; }
+  width: $page-left-width; }
   .page-left-top { 
     float: left; }
     .page-left-top-container {
-      width: $widthLeft;
-      height: $heightLeftTop;
+      width: $page-left-width;
+      height: $page-left-top-height;
       position: relative; 
       overflow: visible;
       .nav-sections { position: absolute; bottom: 0; left: 0; } }
@@ -71,32 +82,139 @@ html {
         left: 20px;
         width: 135px; }
   .page-left-bottom {
-    width: $widthLeft;
+    width: $page-left-width;
     float: left;
     height: 300px;
-    background-size: $widthLeft auto;
+    background-size: $page-left-width auto;
     background-image: image-url('page-left-bottom-bg.jpg');
     background-repeat: repeat-y; }
     .page-left-bottom-img {
-      width: $widthLeft; }
+      width: $page-left-width; }
 
 .page-center {
-  width: $widthCenter;
+  width: $page-center-width;
   float: left;
   top: 0px;
-  left: $widthLeft; }
+  left: $page-left-width;
+  border-top: $page-center-top-brd-height solid $color-navy; }
+  .page-center-header {
+    position: relative;
+    .title {
+      font-size: 14px;
+      text-transform: uppercase;
+      position: absolute;
+      color: white;
+      background-color: $color-navy;
+      top: -$page-center-top-brd-height;
+      padding: 11px 70px 7px 37px; } 
+    .arch-box-brown-1 {
+      $width: 300px;
+      position: absolute;
+      width: $width;
+      height: $page-center-top-brd-height;
+      top: 0px;
+      right: 0px;
+      background-color: $color-tan; }
+    .arch-box-brown-2 {
+      position: absolute;
+      width: 200px;
+      height: $page-center-top-brd-height * 4;
+      top: 0px;
+      right: 0px;
+      background-color: $color-tan; }
+    .arch-box-navy-1 {
+      position: absolute;
+      width: 100px;
+      height: $page-center-top-brd-height * 2;
+      top: 0px;
+      right: 0px;
+      background-color: $color-navy; } }
   .page-center-content {
-    font-size: 13px;
-    line-height: 18px;
-    padding: 35px; }
+    font-size: 14px;
+    line-height: 20px;
+    padding: $page-center-top-margin $page-center-margin $page-center-margin $page-center-margin; }
+    .page-center-services-text-padding {
+      float: right;
+      width: $services-text-width;
+      margin-top: -$page-center-top-margin + $page-right-header-height - $page-center-top-brd-height;
+      margin-right: -$page-center-margin;
+      margin-bottom: 20px;
+      margin-left: 20px; }
 
 .page-right {
-  width: $widthRight;
+  width: $page-right-width;
   float: left;
-}
+  background-color: black;
+  overflow: visible; }
+  .page-right-header {
+    height: $page-center-top-brd-height * 5;
+    background-color: $color-burgandy;
+    .arch-box-navy-1 { 
+      height: $page-center-top-brd-height * 3;
+      background-color: $color-navy; } }
+  .page-right-services {
+    background-color: $color-burgandy;
+    ul {
+      width: $services-width;
+      margin-left: -$services-text-width; }
+    li {
+      $height: $page-right-service-width + 5px;
+      width: $services-width;
+      height: $height;
+      display: table-row;
+      color: $color-link;
+      cursor: pointer;
+      &:hover { 
+        text-decoration: underline;
+        div.img aside { border-color: white; } }
+      div.text { 
+        font-size: 12px;
+        line-height: 14px;
+        width: $services-text-width;
+        height: $height;
+        text-align: right;
+        display: table-cell;
+        vertical-align: middle;
+        padding-right: 10px;
+        @extend %font-family-links; }
+      div.img {
+        width: $page-right-width;
+        height: $height;
+        display: table-cell;
+        text-align: center;
+        vertical-align: middle;
+        aside {
+          $border-width: 2px;
+          $border-radius: $page-right-service-width / 2;
+          display: inline-block;
+          width: $page-right-service-width;
+          height: $page-right-service-width;
+          border: $border-width solid black; 
+          @include border-radius($border-radius);
+          background-size: $page-right-service-width;
+          background-repeat: no-repeat;
+          @extend %bo-border-box;
+          &.expansion-joint { background-image: image-url('services/expansion-joint.jpg'); }
+          &.pedestrian-and-traffic-bearing-systems { background-image: image-url('services/pedestrian-and-traffic-bearing-systems.jpg'); }
+          &.water-repellants { background-image: image-url('services/water-repellants.jpg'); }
+          &.foundation-water { background-image: image-url('services/foundation-water.jpg'); }
+          &.plaza-deck-and-garden { background-image: image-url('services/plaza-deck-and-garden.jpg'); }
+          &.masonry-restoration { background-image: image-url('services/masonry-restoration.jpg'); }
+          &.structural-concrete { background-image: image-url('services/structural-concrete.jpg'); }
+          &.carbon-fiber { background-image: image-url('services/carbon-fiber.jpg'); }
+        } } }
+
+  }
+
+
 
 
 /* General */
+
+h1, h2, h3, h4, h5 { @extend %font-family-header; }
+h1 { font-size: 28px; margin-bottom: 28px; }
+h2 { font-size: 24px; margin-bottom: 24px; }
+h3, h4, h5, h6 { font-size: 16px; margin-bottom: 16px; }
 
 p { margin-bottom: 15px; }
 
@@ -104,15 +222,15 @@ p { margin-bottom: 15px; }
 /* Nav Sections */
 
 .nav-sections {
-  width: $widthLeft * 0.75;
-  background-color: $cBurgandy;
-  color: $cTan;
+  width: $page-left-width * 0.75;
+  background-color: $color-burgandy;
+  color: $color-tan;
   a, 
   a:link, 
   a:visited
   a:active { 
-    color: $cTan; font-size: 13px; line-height: 20px; text-decoration: none;
-    font-family: "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Geneva, Verdana, sans-serif;
+    color: $color-tan; font-size: 13px; line-height: 20px; text-decoration: none;
+    @extend %font-family-links;
   }
   a:hover  { color: white; }
   a.home {
@@ -124,7 +242,7 @@ p { margin-bottom: 15px; }
     white-space: nowrap;
     @include transform2d(rotate(270deg));
     background-color: black;
-    line-height: $widthLeftDsg;
+    line-height: $page-left-black-bar-width;
   }
   ul {
     margin: 5px 0 5px 30px;
