@@ -5,21 +5,21 @@ sleep 1
 
 message=$(git log -1 --pretty=%B)
 
-cd ~/Repositories/compasscontracting.com-github
+cd ~/Repositories/compasscontracting.com-gh-pages
 git checkout gh-pages
-git branch -D gh-pages-me
 git pull
-git checkout -b gh-pages-me
+git branch -D gh-pages-stage
+git checkout -b gh-pages-stage
 
 cd ~/Repositories/compasscontracting.com
-rsync -az --delete --exclude '.git' _site/ ~/Repositories/compasscontracting.com-github
+rsync -az --delete --exclude '.git' _site/ ~/Repositories/compasscontracting.com-gh-pages
 
-cd ~/Repositories/compasscontracting.com-github
+cd ~/Repositories/compasscontracting.com-gh-pages
 git add . 
 echo "Using commit message:"
 echo "$message"
 git commit -m "$message"
 git checkout gh-pages
-git merge gh-pages-me
+git merge gh-pages-stage
 git push origin gh-pages
-git checkout gh-pages-me
+git checkout gh-pages-stage
