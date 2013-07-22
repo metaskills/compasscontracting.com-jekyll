@@ -5,16 +5,16 @@ sleep 1
 
 message=$(git log -1 --pretty=%B)
 
-cd ~/Repositories/compasscontracting.com
+cd ~/Repositories/compasscontracting.com-github
 git checkout gh-pages
 git branch -D gh-pages-me
 git pull
 git checkout -b gh-pages-me
 
-cd ~/Repositories/compasscontracting.com-jekyll
-rsync -az --delete --exclude '.git' _site/ ~/Repositories/compasscontracting.com 
-
 cd ~/Repositories/compasscontracting.com
+rsync -az --delete --exclude '.git' _site/ ~/Repositories/compasscontracting.com-github
+
+cd ~/Repositories/compasscontracting.com-github
 git add . 
 echo "Using commit message:"
 echo "$message"

@@ -25,9 +25,9 @@ class @Compass.ResizeElements
     @pageLeftBottom.css 'height', "#{newPageLeftBottomheight}px"
     unless @pageCenterServicesTextPadding.height()
       @pageCenterServicesTextPadding.css 'height', "#{pageRightServicesHeight}px"
-      setTimeout (=> @adjust()), 50
+      setTimeout (=> @adjust()), 100
     if @pageRight.height() is not pageHeight
-      setTimeout (=> @adjust()), 50
+      setTimeout (=> @adjust()), 100
     true
 
 $ => 
