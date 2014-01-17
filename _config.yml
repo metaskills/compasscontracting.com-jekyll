@@ -1,7 +1,5 @@
 timezone: America/New_York
-markdown: redcarpet
-redcarpet:
-  extensions: ["no_intra_emphasis", "fenced_code_blocks", "autolink", "strikethrough", "lax_spacing", "superscript", "with_toc_data"]
+markdown: kramdown
 permalink: /:year/:month/:day/:title
 exclude:
 - Gemfile

@@ -1,15 +1,17 @@
-Encoding.default_internal = Encoding.find("UTF-8")
-Encoding.default_external = Encoding.find("UTF-8")
-
 source 'https://rubygems.org'
 
 gem 'jekyll'
-gem 'jekyll-assets'
-gem 'nokogiri'
-gem 'rack'
-gem 'rack-rewrite'
-gem 'redcarpet'
-gem 'RedCloth'
-gem 'sass'
-gem 'compass'
-gem 'uglifier'
+gem 'kramdown'
+
+group :development do
+  gem 'rack'
+  gem 'rack-rewrite'
+end
+
+group :assets do
+  gem 'jekyll-assets'
+  gem 'sass'
+  gem 'coffee-script'
+  gem 'compass'
+  gem 'uglifier'
+end
