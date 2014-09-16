@@ -1,4 +1,4 @@
---- 
+---
 layout: page
 title: Newsletters
 header: Dietrick Dining Hall, Exterior Restoration
@@ -22,16 +22,16 @@ Compass Contracting recently performed a $100,000 exterior renovation of Virgini
   </li>
 </ol>
 
-Sika products were chosen to be used on this project and included 
-concrete patching mortars, epoxy resins, elastomeric coatings, anti-corrosion 
-inhibitors, and caulking sealants. The work was to be done during 
-the school's summer break, resulting in a very tight completion 
+Sika products were chosen to be used on this project and included
+concrete patching mortars, epoxy resins, elastomeric coatings, anti-corrosion
+inhibitors, and caulking sealants. The work was to be done during
+the school's summer break, resulting in a very tight completion
 schedule.
 
-Compass contracting self-performed 100% of the work on this project. 
-Sam Neighbors, Vice President, acted as project manager and Frank 
-Hernandez was the on-site project foreman. Both Sam and Frank worked 
-closely with VA Tech&#8217;s project management and the consulting 
+Compass contracting self-performed 100% of the work on this project.
+Sam Neighbors, Vice President, acted as project manager and Frank
+Hernandez was the on-site project foreman. Both Sam and Frank worked
+closely with VA Tech&#8217;s project management and the consulting
 architect, HDH of Christiansburg, VA.
 
 **Repair materials:**

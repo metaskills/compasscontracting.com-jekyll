@@ -1,4 +1,4 @@
---- 
+---
 layout: page
 title: Newsletters
 header: NASA / Langley Research Center, Hampton, VA Facility 1236 Cooling Tower Exterior Rehabilitation
@@ -13,7 +13,7 @@ header: NASA / Langley Research Center, Hampton, VA Facility 1236 Cooling Tower 
   </li>
 </ol>
 
-Compass Contracting recently completed the exterior repairs to the Facility 1236 Cooling Tower. The cooling tower had to remained in operation for the duration of the project, due to the wind tunnel’s operating schedule. 
+Compass Contracting recently completed the exterior repairs to the Facility 1236 Cooling Tower. The cooling tower had to remained in operation for the duration of the project, due to the wind tunnel’s operating schedule.
 
 **The scope of work for this project included the following aspects:**
 
@@ -25,8 +25,8 @@ Clean the entire exterior of the structure to remove the large amount of biologi
 * Seal the numerous thru-wall cracks, located in the concrete basin, by injection with hydrophobic grout.
 * Inject structural cracks in the beams and columns with a structural epoxy repair resin.
 * Apply a silane-based, water-repellent onto the masonry veneer areas.
-* Apply an elastomeric, waterproof coating system onto the tower’s concrete elements including the basin, beams, columns and parapet walls. 
+* Apply an elastomeric, waterproof coating system onto the tower’s concrete elements including the basin, beams, columns and parapet walls.
 
-Compass Contracting self-performed 100% of the work. Phil Bashford was the project manager for this project and Rob Springer acted as the on-site project foreman, responsible for interfacing with the facility’s operations on a daily basis. 
+Compass Contracting self-performed 100% of the work. Phil Bashford was the project manager for this project and Rob Springer acted as the on-site project foreman, responsible for interfacing with the facility’s operations on a daily basis.
 
 SIKA products were chosen to be used on the project, which included [concrete repair mortars](/services/structural-concrete-repairs.html), epoxy resins, anti-corrosion inhibitors, sealants and elastomeric waterproof coatings.

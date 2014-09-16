@@ -1,7 +1,6 @@
-gem 'rack-rewrite'
-require 'rack/rewrite'
-
-use Rack::Rewrite do
-  r301 %r{^([^\.]*[^\/])$}, '$1/' 
-  r301 %r{^(.*\/)$}, '$1index.html'
-end
+require 'bundler'
+ENV['BUNDLE_GEMFILE'] ||= File.expand_path('../Gemfile', __FILE__)
+require 'bundler/setup'
+require 'yaml'
+require 'rack/jekyll'
+run Rack::Jekyll.new

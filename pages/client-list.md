@@ -1,4 +1,4 @@
---- 
+---
 layout: page
 title: Client List
 header: Compass Contracting, Inc.
@@ -158,4 +158,4 @@ header: Compass Contracting, Inc.
 * 150 West Main Street - Norfolk, VA
 * Main Street Tower - Richmond, VA
 * Arboretum Complex - Midlothian, VA
- 
+

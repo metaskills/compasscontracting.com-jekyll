@@ -3,15 +3,12 @@ source 'https://rubygems.org'
 gem 'jekyll'
 gem 'kramdown'
 
-group :development do
-  gem 'rack'
-  gem 'rack-rewrite'
-end
+# Assets
+gem 'jekyll-assets'
+gem 'sass'
+gem 'coffee-script'
+gem 'compass'
+gem 'uglifier'
 
-group :assets do
-  gem 'jekyll-assets'
-  gem 'sass'
-  gem 'coffee-script'
-  gem 'compass'
-  gem 'uglifier'
-end
+# Development
+gem 'rack-jekyll', github: 'adaoraul/rack-jekyll'
