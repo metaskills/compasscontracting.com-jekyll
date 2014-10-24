@@ -29,7 +29,7 @@ Today, Compass remains a small, local business, with just 20 employees in Hampto
     <img src="{{ 'usbr_summerhouse_apartments.jpg' | asset_path }}" alt="Summerhouse Apartments">
   </li>
 </ol>
-There are few companies with the in-house capabilities Compass holds. "Not everyone does what we do because it takes a specialized skill set," details Bashford. "Because Compass is a spin off from another firm, most of the people we have working with us have been here for 20- plus years. We are typically a subcontractor, but we're also a general contractor, as well, and we generally do everything, 100 percent in-house."
+There are few companies with the in-house capabilities Compass holds. "Not everyone does what we do because it takes a specialized skill set," details Bashford. "Because Compass is a spin off from another firm, most of the people we have working with us have been here for 20 plus years. We are typically a subcontractor, but we're also a general contractor, as well, and we generally do everything, 100 percent in-house."
 
 In 2009, Compass was recognized as the Small Business Subcontractor of the Year for its construction technology, support and services in renovations and repair structures for the NASA Langley Research Center and the company has enjoyed a longstanding relationship with NASA for many years. "In 2012, we did three exterior restorations on area NASA buildings," adds Bashford. "We've worked with NASA since 1982 and we've probably completed 30 projects from wind tunnels to monument structures – we're a catch-all for whatever they need."
 
@@ -49,7 +49,7 @@ While Compass' expertise shines on the ground, the company also takes to the roo
     <img src="{{ 'usbr_foundation_injection_at_nasa.jpg' | asset_path }}" alt="Foundation Injection at NASA">
   </li>
 </ol>
-Bashford says Compass' experience with hot-fluid- applied-rubberized waterproofing, which is commonly used in green roof applications, sets the company apart being such a niche service. "We replaced the roofing at the U.S. Naval Academy- King Hall with the hot-fluid- applied-rubberized waterproofing application," he notes. "Unlike a traditional roof, the application is seamless."
+Bashford says Compass' experience with hot, fluid-applied, rubberized waterproofing which is commonly used in green roof applications, sets the company apart being such a niche service. "We replaced the roofing at the U.S. Naval Academy King Hall with the hot, fluid-applied, rubberized waterproofing application" he notes. "Unlike a traditional roof, the application is seamless."
 
 But even a range of focused services couldn't completely shield Compass from the recession. "50 percent of our business is government based, so when the cutbacks hit, we were affected," reveals Bashford. "Fortunately, we were able to make up the difference in the commercial and industrial market. It certainly hasn't been easy, but we've made it through and the government sector is picking up again."
 
