@@ -47,7 +47,7 @@ $content-bottom-margin:       15px;
 
 @each $el in elements-of-type('block') {  #{$el} { @extend %bs-border-box; } }
 
-html { 
+html {
   color: black;
   background-color: black;
   padding-bottom: 40px;
@@ -69,12 +69,12 @@ a:hover { text-decoration: underline; }
 .page-left {
   float: left;
   width: $page-left-width; }
-  .page-left-top { 
+  .page-left-top {
     float: left; }
     .page-left-top-container {
       width: $page-left-width;
       height: $page-left-top-height;
-      position: relative; 
+      position: relative;
       overflow: visible;
       .nav-sections { position: absolute; bottom: 0; left: 0; } }
       .page-left-top-bg {
@@ -112,7 +112,7 @@ a:hover { text-decoration: underline; }
       color: white;
       background-color: $color-navy;
       top: -$page-center-top-brd-height;
-      padding: 11px 70px 7px 37px; } 
+      padding: 11px 70px 7px 37px; }
     .arch-box-tan-1 {
       $width: 300px;
       position: absolute;
@@ -167,7 +167,7 @@ a:hover { text-decoration: underline; }
   .page-right-header {
     height: $page-center-top-brd-height * 5;
     background-color: $color-brown;
-    .arch-box-navy-1 { 
+    .arch-box-navy-1 {
       height: $page-center-top-brd-height * 3;
       background-color: $color-navy; } }
   .page-right-services {
@@ -182,10 +182,10 @@ a:hover { text-decoration: underline; }
       display: table-row;
       color: $color-link;
       cursor: pointer;
-      &:hover { 
+      &:hover {
         text-decoration: underline;
         div.img aside { border-color: white; } }
-      div.text { 
+      div.text {
         font-size: 12px;
         line-height: 14px;
         width: $services-text-width;
@@ -208,7 +208,7 @@ a:hover { text-decoration: underline; }
           display: inline-block;
           width: $page-right-service-width;
           height: $page-right-service-width;
-          border: $border-width solid black; 
+          border: $border-width solid black;
           @include border-radius($border-radius);
           background-size: $page-right-service-width;
           background-repeat: no-repeat;
@@ -262,7 +262,7 @@ strong  { font-weight: bold; }
 }
 
 #whatsnew {
-
+  h1 { margin-bottom: $content-bottom-margin; }
 }
 
 /* Nav Sections */
@@ -271,10 +271,10 @@ strong  { font-weight: bold; }
   width: $page-left-width * 0.75;
   background-color: $color-burgandy;
   color: $color-tan;
-  a, 
-  a:link, 
+  a,
+  a:link,
   a:visited
-  a:active { 
+  a:active {
     color: $color-tan; font-size: 13px; line-height: 20px; text-decoration: none;
     @extend %font-family-links; }
   a:hover  { color: white; }
