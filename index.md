@@ -6,8 +6,8 @@ title: Compass Contracting, Inc.
 
 <div id="home">
 
-  <h1>Solutions Through Technology</h2>
-  <h1>A Creative Approach To Structural Repair</h2>
+  <h1 id="home-h1">Solutions Through Technology</h1>
+  <h2 id="home-h2">A Creative Approach To Structural Repair</h2>
 
   <p>
     <strong>Structures, like people, develop problems and need more maintenance as they age. It's just a fact of life. And again like people, every problem is different. There is just no single set solution.</strong>
@@ -26,9 +26,12 @@ title: Compass Contracting, Inc.
 
 <div id="whatsnew">
 
-  <h1>What's New</h1>
+  <h2>What's New</h2>
 
   {% assign post = site.posts.first %}
+  {% include newsletter.html %}
+
+  {% assign post = site.posts[1] %}
   {% include newsletter.html %}
 
 </div>

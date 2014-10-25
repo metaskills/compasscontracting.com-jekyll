@@ -12,7 +12,10 @@ header: Navigating a niche market and a creative approach to specialized structu
 
 [Thanks to the Summer 2014 US Builders Review! The Industry Leading Construction Journal!](http://www.usbuildersreview.com/)
 
-### Produced by Kyle Gahm & Written by Molly Shaw
+<h3>
+  Produced by Kyle Gahm &amp;<br/>
+  Written by Molly Shaw
+</h3>
 
 When there's a unique structural concrete or waterproofing challenge, clients of all shapes and sizes call on Compass Contracting (Compass) to navigate the way toward a solution. "We operate in a very niche-type market," explains Phil Bashford, founding principal and secretary-treasurer of Compass. "We deliver specialty structural concrete repair mainly for restoration work, including epoxy crack injection, carbon fiber, air barriers and all types of waterproofing for the government, commercial and industrial sector."
 

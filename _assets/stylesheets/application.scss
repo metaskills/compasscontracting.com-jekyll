@@ -38,8 +38,10 @@ $content-bottom-margin:       15px;
 %bc-border-box { @include background-clip(border-box); }
 %bo-border-box { @include background-origin(border-box); }
 
-%font-family-main   { font-family: "Century Gothic", "CenturyGothic", "AppleGothic", sans-serif; }
-%font-family-header { font-family: "Gill Sans", "Gill Sans MT", "Calibri", sans-serif; }
+%font-family-main   { font-family: 'Montserrat', sans-serif; }
+%font-family-main-n { font-weight: 300; }
+%font-family-main-b { font-weight: 600; }
+%font-family-header { font-family: 'Montserrat', sans-serif; }
 %font-family-links  { font-family: "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", "Geneva", Verdana, sans-serif; }
 
 
@@ -52,6 +54,7 @@ html {
   background-color: black;
   padding-bottom: 40px;
   @extend %font-family-main;
+  @extend %font-family-main-n;
 }
 
 a, a:link, a:visited, a:active { color: $color-link; text-decoration: none; }
@@ -244,7 +247,7 @@ a:hover { text-decoration: underline; }
 
 /* General */
 
-h1, h2, h3, h4, h5 { @extend %font-family-header; }
+h1, h2, h3, h4, h5 { @extend %font-family-header; @extend %font-family-main-b;  }
 h1             { font-size: 28px; margin-bottom: 28px; line-height: 110%; width: 60%; }
 h2             { font-size: 24px; margin-bottom: 24px; line-height: 110%; width: 60%; }
 h3, h4, h5, h6 { font-size: 18px; margin-bottom: 18px; line-height: 105%; }
@@ -255,11 +258,9 @@ strong  { font-weight: bold; }
 
 /* Home */
 
-#home {
-  h1              { width: 100%; text-transform: uppercase; @extend %font-family-main; margin-bottom: 0; }
-  h1:nth-child(1) { font-size: 24px; font-weight: bold; }
-  h1:nth-child(2) { font-size: 19px; margin-bottom: $content-bottom-margin; }
-}
+#home { margin-bottom: $content-bottom-margin * 2; }
+#home-h1 { font-size: 20px; text-transform: uppercase; margin-bottom: 3px; }
+#home-h2 { font-size: 16px; @extend %font-family-main-n; margin-bottom: $content-bottom-margin; }
 
 #whatsnew {
   h1 { margin-bottom: $content-bottom-margin; }
