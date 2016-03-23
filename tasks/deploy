@@ -1,6 +1,6 @@
-# Build and deploy to static site github repo.
+#!/bin/zsh
 
-./tasks/jekyll 
+./tasks/jekyll _config_production.yml
 sleep 1
 
 message=$(git log -1 --pretty=%B)
@@ -15,7 +15,7 @@ cd ~/Repositories/compasscontracting.com
 rsync -az --delete --exclude '.git' _site/ ~/Repositories/compasscontracting.com-gh-pages
 
 cd ~/Repositories/compasscontracting.com-gh-pages
-git add . 
+git add .
 echo "Using commit message:"
 echo "$message"
 git commit -m "$message"

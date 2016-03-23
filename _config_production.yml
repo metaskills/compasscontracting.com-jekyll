@@ -1,4 +1,4 @@
-production: false
+production: true
 timezone: America/New_York
 markdown: kramdown
 permalink: /:year/:month/:day/:title
@@ -12,7 +12,7 @@ exclude:
 - bin
 - public
 - tmp
-host: compasscontracting.dev
+host: compasscontracting.com
 assets:
   js_compressor:  uglifier
   css_compressor: sass

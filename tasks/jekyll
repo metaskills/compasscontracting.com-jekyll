@@ -1,5 +1,11 @@
-# Create the site and tidy it.
+#!/bin/zsh
+
+if [ $1 ]; then
+  config=$1
+else
+  config='_config.yml'
+fi
 
 env RM_STAR_SILENT=true rm -rf _site/* && mkdir -p _site && \
-  jekyll build && \
+  jekyll build --config $config && \
   find _site -name "*.html" -exec tidy -config $(pwd)/tidy.conf {} \;
