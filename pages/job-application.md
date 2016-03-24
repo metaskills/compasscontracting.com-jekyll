@@ -10,7 +10,7 @@ header: Job Application
 
 <div style="height:20px"></div>
 
-<form action="https://getsimpleform.com/messages?form_api_token=5a304c5b1f307772540d0c784424050e" method="post">
+<form action="https://getsimpleform.com/messages?form_api_token=b2d25a5f8b0f1aedda55760f4627bc37" method="post">
   <input type='hidden' name='redirect_to' value='http://{{ site.host }}/pages/job-application-thanks.html' />
   <fieldset>
     <label for="name">Name:</label>
