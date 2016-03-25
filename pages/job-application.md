@@ -4,6 +4,8 @@ title:
 header: Job Application
 ---
 
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+
 **For more information, please contact us:**
 
 {% include contact_info.html %}
@@ -38,9 +40,44 @@ header: Job Application
     <input type="text" id="zip" name="zip" />
   </fieldset>
   <fieldset>
-    <label>&nbsp;</label>
-    <input type='submit' value='Submit Application' />
+    <label for="phone">Phone:</label>
+    <input type="text" id="phone" name="phone" />
   </fieldset>
+  <fieldset>
+    <label for="email">Email:</label>
+    <input type="text" id="email" name="email" />
+  </fieldset>
+
+  <fieldset class="cc-fieldsetLabeless">
+    <span>Are you 18 years or older?</span>
+    <input id="older18-yes" name="older18" type="radio">
+    <label for="older18-yes" class="cc-radioLabel">YES</label>
+    <input id="older18-no" name="older18" type="radio">
+    <label for="older18-no" class="cc-radioLabel">NO</label>
+  </fieldset>
+
+  <!--
+  <fieldset class="cc-fieldsetLabeless">
+    <input id="older18" class="checkbox-custom" name="older18" type="checkbox">
+    <label for="older18" class="cc-checkboxLabel">
+      Are you 18 years or older?
+    </label>
+  </fieldset>
+  -->
+
+
+
+
+
+
+
+
+
+  <fieldset>
+    <label>&nbsp;</label>
+    <input type="submit" value="Submit Application" />
+  </fieldset>
+
 </form>
 
 
