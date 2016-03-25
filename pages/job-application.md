@@ -50,9 +50,9 @@ header: Job Application
 
   <fieldset class="cc-fieldsetLabeless">
     <span>Are you 18 years or older?</span>
-    <input id="older18-yes" name="older18" type="radio">
+    <input id="older18-yes" name="older18" type="radio" value="yes">
     <label for="older18-yes" class="cc-radioLabel">YES</label>
-    <input id="older18-no" name="older18" type="radio">
+    <input id="older18-no" name="older18" type="radio" value="no">
     <label for="older18-no" class="cc-radioLabel">NO</label>
   </fieldset>
 
