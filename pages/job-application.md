@@ -4,6 +4,7 @@ title:
 header: Job Application
 ---
 
+{% javascript vendor/signature_pad.js %}
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
 
 **For more information, please contact us:**
@@ -11,7 +12,8 @@ header: Job Application
 {% include contact_info.html %}
 
 <form class="cc-Form" action="https://getsimpleform.com/messages?form_api_token=b2d25a5f8b0f1aedda55760f4627bc37" method="post">
-  <input type='hidden' name='redirect_to' value='http://{{ site.host }}/pages/job-application-thanks.html' />
+  <input type="hidden" name="redirect_to" value="http://{{ site.host }}/pages/job-application-thanks.html" />
+  <input type="hidden" name="signature" value="" />
   <section class="cc-FormSection">
     <h5>Personal Information</h5>
     <fieldset>
@@ -248,52 +250,66 @@ header: Job Application
     {% endfor %}
   </section>
 
-    <!--
+  <section class="cc-FormSection">
+    <h5>References:</h5>
+    <p>List three persons not related to you, whom you have known at least one year.</p>
+    {% for i in (1..3) %}
+      <fieldset>
+        <label for="ref-name-{{forloop.index}}">Name:</label>
+        <input type="text" id="ref-name-{{forloop.index}}" name="ref-name-{{forloop.index}}" />
+      </fieldset>
+      <fieldset>
+        <label for="ref-address-{{forloop.index}}">Address:</label>
+        <input type="text" id="ref-address-{{forloop.index}}" name="ref-address-{{forloop.index}}" />
+      </fieldset>
+      <fieldset>
+        <label for="ref-phone-{{forloop.index}}">Phone:</label>
+        <input type="text" id="ref-phone-{{forloop.index}}" name="ref-phone-{{forloop.index}}" />
+      </fieldset>
+      <fieldset>
+        <label for="ref-years-acquainted-{{forloop.index}}">Years Acquainted:</label>
+        <input type="text" id="ref-years-acquainted-{{forloop.index}}" name="ref-years-acquainted-{{forloop.index}}" />
+      </fieldset>
+      {% unless forloop.index == forloop.length %}
+        <hr class="cc-FormRule">
+      {% endunless %}
+    {% endfor %}
+  </section>
 
-    <fieldset>
-      <label for="XXX">XXX:</label>
-      <input type="text" id="XXX" name="XXX" />
-    </fieldset>
+  <section class="cc-FormSection">
+    <h5>Authorization:</h5>
+    <p>I certify that all information submitted by me on this application is true and complete and I understand that if any false information, omissions, or misrepresentations are discovered, my application may be rejected and, if I am employed, my employment may be terminated at any time.</p>
+    <p>In consideration of my employment, I agree to conform to the company's rules and regulation, and I agree that my employment and compensation can be terminated, with or without cause, and with or without notice, at any time, at either my or the company's option. I also understand and agree that the terms and condition of my employment may be changed, with our without cause and with or without notice, at any time by the company.</p>
+    <p id="signature" class="cc-FormSignature">
+      <canvas></canvas>
+    </p>
+    <div class="cc-FormSignature-footer">
+      <div class="cc-FormSignature-footer-desc">Sign Above</div>
+      <button type="button" class="cc-FormSignature-footer-btn">Clear</button>
+    </div>
+  </section>
 
-    <fieldset class="cc-fieldsetLabeless">
-      <span>XXX?</span>
-      <div>
-        <input id="XXX-yes" name="XXX" type="radio" value="YES">
-        <label for="XXX-yes" class="cc-radioLabel">YES</label>
-        <input id="XXX-no" name="XXX" type="radio" value="NO">
-        <label for="XXX-no" class="cc-radioLabel">NO</label>
-      </div>
-    </fieldset>
-
-    <fieldset class="cc-fieldsetLabeless">
-      <span>XXX?</span>
-      <div>
-        <input id="XXX-yes" name="XXX" type="radio" value="YES">
-        <label for="XXX-yes" class="cc-radioLabel">YES</label>
-        <input id="XXX-no" name="XXX" type="radio" value="NO">
-        <label for="XXX-no" class="cc-radioLabel">NO</label>
-      </div>
-      <aside>
-        <textarea name="XXX-details" id="XXX-details" placeholder="If yes, please provide details."></textarea>
-      </aside>
-    </fieldset>
-
-    -->
-
-
-
-
-
-
-
-
-
-  <fieldset>
-    <label>&nbsp;</label>
+  <section class="cc-FormSection">
     <input type="submit" value="Submit Application" />
-  </fieldset>
+  </section>
 
 </form>
 
-
-
+<script>
+  (function(){
+    window.JobApplication = {};
+    var signature;
+    var signatureInput = document.querySelector('.cc-Form input[name=signature]')
+    var canvas = document.getElementById('signature').querySelector('canvas');
+    canvas.width = 450;
+    canvas.height = 175;
+    var onEnd = function(){ signatureInput.value = signature.toDataURL('image/jpeg'); }
+    signature = new SignaturePad(canvas, {onEnd: onEnd});
+    signature.penColor = 'blue';
+    var clearButton = document.querySelector('.cc-FormSignature-footer button')
+    clearButton.addEventListener("click", function(event){
+      signature.clear();
+    });
+    window.JobApplication.Signature = signature;
+  }());
+</script>
