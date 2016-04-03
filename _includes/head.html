@@ -6,4 +6,7 @@
   <title>Compass Contracting, Inc. - {{ page.header || page.title }}</title>
   <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,600italic,300,600' rel='stylesheet' type='text/css'>
   {% stylesheet application %}
+  {% unless site.production %}
+  <script src="http://localhost:35729/livereload.js?snipver=1"></script>
+  {% endunless %}
 </head>

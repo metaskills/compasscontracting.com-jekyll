@@ -12,3 +12,6 @@ gem 'uglifier'
 
 # Development
 gem 'rack-jekyll', github: 'adaoraul/rack-jekyll'
+gem 'guard'
+gem 'guard-jekyll-plus'
+gem 'guard-livereload'
