@@ -6,6 +6,6 @@ else
   config='_config.yml'
 fi
 
-env RM_STAR_SILENT=true rm -rf _site/* && mkdir -p _site && \
+env RM_STAR_SILENT=true rm -rf _site && mkdir -p _site && \
   jekyll build --config $config && \
   find _site -name "*.html" -exec tidy -config $(pwd)/tidy.conf {} \;
