@@ -93,7 +93,7 @@ header: Job Application
       <input id="received-workmans-comp-no" name="received-workmans-comp" type="radio" value="NO">
       <label for="received-workmans-comp-no" class="cc-radioLabel">NO</label>
       <aside>
-        <textarea name="received-workmans-details" id="received-workmans-details" placeholder="If yes, please provide details."></textarea>
+        <textarea name="received-workmans-comp-details" id="received-workmans-comp-details" placeholder="If yes, please provide details."></textarea>
       </aside>
     </fieldset>
     <fieldset class="cc-fieldsetLabeless">
