@@ -190,8 +190,57 @@ header: Job Application
     <h5>Former Employers</h5>
     {% for i in (1..2) %}
       <fieldset>
-        <label for="employers-name-{{forloop.index}}">Employer's Name:</label>
-        <input type="text" id="employers-name-{{forloop.index}}" name="employers-name-{{forloop.index}}" />
+        <label for="emp-name-{{forloop.index}}">Employer's Name:</label>
+        <input type="text" id="emp-name-{{forloop.index}}" name="emp-name-{{forloop.index}}" />
+      </fieldset>
+      <fieldset>
+        <label for="emp-address-{{forloop.index}}">Employer's Address:</label>
+        <input type="text" id="emp-address-{{forloop.index}}" name="emp-address-{{forloop.index}}" />
+      </fieldset>
+      <fieldset>
+        <label for="emp-starting-date-{{forloop.index}}">Starting Date:</label>
+        <input type="text" id="emp-starting-date-{{forloop.index}}" name="emp-starting-date-{{forloop.index}}" placeholder="Month/Year" />
+      </fieldset>
+      <fieldset>
+        <label for="emp-leaving-date-{{forloop.index}}">Leaving Date:</label>
+        <input type="text" id="emp-leaving-date-{{forloop.index}}" name="emp-leaving-date-{{forloop.index}}" placeholder="Month/Year" />
+      </fieldset>
+      <fieldset>
+        <label for="emp-starting-salary-{{forloop.index}}">Starting Salary:</label>
+        <input type="text" id="emp-starting-salary-{{forloop.index}}" name="emp-starting-salary-{{forloop.index}}" />
+      </fieldset>
+      <fieldset>
+        <label for="emp-final-salary-{{forloop.index}}">Final Salary:</label>
+        <input type="text" id="emp-final-salary-{{forloop.index}}" name="emp-final-salary-{{forloop.index}}" />
+      </fieldset>
+      <fieldset>
+        <label for="emp-job-title-{{forloop.index}}">Job Title:</label>
+        <input type="text" id="emp-job-title-{{forloop.index}}" name="emp-job-title-{{forloop.index}}" />
+      </fieldset>
+      <fieldset class="cc-fieldsetLabeless">
+        <span>May we contact your supervisor?</span>
+        <div>
+          <input id="emp-contact-supervisor-{{forloop.index}}-yes" name="emp-contact-supervisor-{{forloop.index}}" type="radio" value="YES">
+          <label for="emp-contact-supervisor-{{forloop.index}}-yes" class="cc-radioLabel">YES</label>
+          <input id="emp-contact-supervisor-{{forloop.index}}-no" name="emp-contact-supervisor-{{forloop.index}}" type="radio" value="NO">
+          <label for="emp-contact-supervisor-{{forloop.index}}-no" class="cc-radioLabel">NO</label>
+        </div>
+      </fieldset>
+      <fieldset>
+        <label for="emp-supervisor-name-{{forloop.index}}">Supervisor Name:</label>
+        <input type="text" id="emp-supervisor-name-{{forloop.index}}" name="emp-supervisor-name-{{forloop.index}}" />
+      </fieldset>
+      <fieldset>
+        <label for="emp-phone-no-{{forloop.index}}">Phone No.:</label>
+        <input type="text" id="emp-phone-no-{{forloop.index}}" name="emp-phone-no-{{forloop.index}}" />
+      </fieldset>
+      <fieldset>
+        <label for="emp-work-performed-{{forloop.index}}">Work Performed:</label>
+        <input type="text" id="emp-work-performed-{{forloop.index}}" name="emp-work-performed-{{forloop.index}}" />
+      </fieldset>
+      <fieldset>
+        <label for="emp-reason-leaving-{{forloop.index}}">Reason for Leaving:</label>
+        <input type="text" id="emp-reason-leaving-{{forloop.index}}" name="emp-reason-leaving-{{forloop.index}}" />
       </fieldset>
       {% unless forloop.index == forloop.length %}
         <hr class="cc-FormRule">
