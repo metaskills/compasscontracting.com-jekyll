@@ -78,20 +78,24 @@ header: Job Application
     </fieldset>
     <fieldset class="cc-fieldsetLabeless">
       <span>Do you have any injuries or illnesses that would prevent you from performing your job?</span>
-      <input id="injuries-or-illnesses-yes" name="injuries-or-illnesses" type="radio" value="YES">
-      <label for="injuries-or-illnesses-yes" class="cc-radioLabel">YES</label>
-      <input id="injuries-or-illnesses-no" name="injuries-or-illnesses" type="radio" value="NO">
-      <label for="injuries-or-illnesses-no" class="cc-radioLabel">NO</label>
+      <div>
+        <input id="injuries-or-illnesses-yes" name="injuries-or-illnesses" type="radio" value="YES">
+        <label for="injuries-or-illnesses-yes" class="cc-radioLabel">YES</label>
+        <input id="injuries-or-illnesses-no" name="injuries-or-illnesses" type="radio" value="NO">
+        <label for="injuries-or-illnesses-no" class="cc-radioLabel">NO</label>
+      </div>
       <aside>
         <textarea name="injuries-or-illnesses-details" id="injuries-or-illnesses-details" placeholder="If yes, please provide details."></textarea>
       </aside>
     </fieldset>
     <fieldset class="cc-fieldsetLabeless">
       <span>Have you ever filed for or received workman's compensation?</span>
-      <input id="received-workmans-comp-yes" name="received-workmans-comp" type="radio" value="YES">
-      <label for="received-workmans-comp-yes" class="cc-radioLabel">YES</label>
-      <input id="received-workmans-comp-no" name="received-workmans-comp" type="radio" value="NO">
-      <label for="received-workmans-comp-no" class="cc-radioLabel">NO</label>
+      <div>
+        <input id="received-workmans-comp-yes" name="received-workmans-comp" type="radio" value="YES">
+        <label for="received-workmans-comp-yes" class="cc-radioLabel">YES</label>
+        <input id="received-workmans-comp-no" name="received-workmans-comp" type="radio" value="NO">
+        <label for="received-workmans-comp-no" class="cc-radioLabel">NO</label>
+      </div>
       <aside>
         <textarea name="received-workmans-comp-details" id="received-workmans-comp-details" placeholder="If yes, please provide details."></textarea>
       </aside>
@@ -111,27 +115,93 @@ header: Job Application
       <label for="own-transportation-no" class="cc-radioLabel">NO</label>
     </fieldset>
   </section>
+
   <section class="cc-FormSection">
     <h5>Employment Desired</h5>
+    <fieldset>
+      <label for="name">Position:</label>
+      <input type="text" id="position" name="position" />
+    </fieldset>
+    <fieldset>
+      <label for="name">When can you start:</label>
+      <input type="text" id="start-date" name="start-date" />
+    </fieldset>
+    <fieldset>
+      <label for="name">Salary Desired:</label>
+      <input type="text" id="salary-desired" name="salary-desired" />
+    </fieldset>
+    <fieldset class="cc-fieldsetLabeless cc-fieldsetLabeless--topped">
+      <span>Are you employed now?</span>
+      <div>
+        <input id="employed-now-yes" name="employed-now" type="radio" value="YES">
+        <label for="employed-now-yes" class="cc-radioLabel">YES</label>
+        <input id="employed-now-no" name="employed-now" type="radio" value="NO">
+        <label for="employed-now-no" class="cc-radioLabel">NO</label>
+      </div>
+    </fieldset>
+    <fieldset class="cc-fieldsetLabeless">
+      <span>May we contact your current employer?</span>
+      <div>
+        <input id="contact-employer-yes" name="contact-employer" type="radio" value="YES">
+        <label for="contact-employer-yes" class="cc-radioLabel">YES</label>
+        <input id="contact-employer-no" name="contact-employer" type="radio" value="NO">
+        <label for="contact-employer-no" class="cc-radioLabel">NO</label>
+      </div>
+    </fieldset>
+    <fieldset class="cc-fieldsetLabeless">
+      <span>Ever applied to this company before?</span>
+      <div>
+        <input id="ever-applied-here-yes" name="ever-applied-here" type="radio" value="YES">
+        <label for="ever-applied-here-yes" class="cc-radioLabel">YES</label>
+        <input id="ever-applied-here-no" name="ever-applied-here" type="radio" value="NO">
+        <label for="ever-applied-here-no" class="cc-radioLabel">NO</label>
+      </div>
+      <aside>
+        <textarea name="ever-applied-here-details" id="ever-applied-here-details" placeholder="If yes, when?"></textarea>
+      </aside>
+    </fieldset>
+    <fieldset class="cc-fieldsetLabeless">
+      <span>Ever worked for this company before?</span>
+      <div>
+        <input id="ever-worked-here-yes" name="ever-worked-here" type="radio" value="YES">
+        <label for="ever-worked-here-yes" class="cc-radioLabel">YES</label>
+        <input id="ever-worked-here-no" name="ever-worked-here" type="radio" value="NO">
+        <label for="ever-worked-here-no" class="cc-radioLabel">NO</label>
+      </div>
+      <aside>
+        <textarea name="ever-worked-here-details" id="ever-worked-here-details" placeholder="If yes, when? Reason for leaving?"></textarea>
+      </aside>
+    </fieldset>
   </section>
 
 
-  <!--
-  <fieldset class="cc-fieldsetLabeless">
-    <span>Xxx</span>
-    <input id="xxx-yes" name="xxx" type="radio" value="YES">
-    <label for="xxx-yes" class="cc-radioLabel">YES</label>
-    <input id="xxx-no" name="xxx" type="radio" value="NO">
-    <label for="xxx-no" class="cc-radioLabel">NO</label>
-  </fieldset>
+    <!--
 
-  <fieldset class="cc-fieldsetLabeless">
-    <input id="over-18" class="checkbox-custom" name="over-18" type="checkbox">
-    <label for="over-18" class="cc-checkboxLabel">
-      Are you 18 years or older?
-    </label>
-  </fieldset>
-  -->
+    <fieldset class="cc-fieldsetLabeless">
+      <span>XXX?</span>
+      <div>
+        <input id="XXX-yes" name="XXX" type="radio" value="YES">
+        <label for="XXX-yes" class="cc-radioLabel">YES</label>
+        <input id="XXX-no" name="XXX" type="radio" value="NO">
+        <label for="XXX-no" class="cc-radioLabel">NO</label>
+      </div>
+    </fieldset>
+
+
+    <fieldset class="cc-fieldsetLabeless">
+      <span>XXX?</span>
+      <div>
+        <input id="XXX-yes" name="XXX" type="radio" value="YES">
+        <label for="XXX-yes" class="cc-radioLabel">YES</label>
+        <input id="XXX-no" name="XXX" type="radio" value="NO">
+        <label for="XXX-no" class="cc-radioLabel">NO</label>
+      </div>
+      <aside>
+        <textarea name="XXX-details" id="XXX-details" placeholder="If yes, please provide details."></textarea>
+      </aside>
+    </fieldset>
+
+    -->
 
 
 

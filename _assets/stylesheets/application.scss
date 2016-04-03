@@ -362,12 +362,12 @@ $form-input-border: 1px solid #ddd;
       width: 50%;
       font-size: $form-font-size;
       margin-right: $form-label-right * 2;
-      margin-bottom: $form-label-right;
       float: left;
     }
     aside {
       display: block;
       clear: both;
+      padding-top: $form-label-right;
     }
     &--topped {
       margin-top: $form-label-right * 2;
