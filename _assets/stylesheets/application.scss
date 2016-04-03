@@ -334,7 +334,8 @@ $form-font-size: 16px;
 $form-width-label: 90px;
 $form-label-right: 8px;
 $form-width-input: 380px;
-$form-border: 1px solid #ddd;
+$form-input-padding: 4px;
+$form-input-border: 1px solid #ddd;
 
 .cc-Form {
   *, *::before, *::after { box-sizing: inherit; }
@@ -350,11 +351,26 @@ $form-border: 1px solid #ddd;
     margin-bottom: 8px;
   }
   fieldset.cc-fieldsetLabeless {
-    margin-left: $form-width-label + $form-label-right + 4px;
+    margin-left: $form-label-right * 2;
+    margin-bottom: $form-label-right * 2;
+    @include clearfix;
+    div {
+      float: left;
+    }
     span {
       display: block;
+      width: 50%;
       font-size: $form-font-size;
+      margin-right: $form-label-right * 2;
       margin-bottom: $form-label-right;
+      float: left;
+    }
+    aside {
+      display: block;
+      clear: both;
+    }
+    &--topped {
+      margin-top: $form-label-right * 2;
     }
   }
   label:not(.cc-checkboxLabel):not(.cc-radioLabel) {
@@ -365,12 +381,18 @@ $form-border: 1px solid #ddd;
     margin-right: $form-label-right;
     text-align: right;
   }
-  input:not([type=submit]):not([type=checkbox]):not([type=radio]) {
+  input:not([type=submit]):not([type=checkbox]):not([type=radio]),
+  textarea {
     color: blue;
     width: $form-width-input;
     font-size: $form-font-size;
-    padding: 4px;
-    border: $form-border;
+    padding: $form-input-padding;
+    border: $form-input-border;
+  }
+  textarea {
+    $lines: 3;
+    width: $form-width-label + $form-width-input;
+    height: ($form-font-size * $lines) + ($form-input-padding * ($lines * 2));
   }
   input[type=submit] {
     font-size: 24px;
@@ -411,7 +433,7 @@ $form-border: 1px solid #ddd;
   [type=radio] + .cc-radioLabel:before {
     content: '';
     background: #fff;
-    border: $form-border;
+    border: $form-input-border;
     display: inline-block;
     vertical-align: middle;
     width: $size;
@@ -438,6 +460,10 @@ $form-border: 1px solid #ddd;
   [type=radio]:focus + .cc-radioLabel {
     outline: 1px solid #ddd;
   }
+}
+
+.cc-FormSection {
+  margin-top: 2rem;
 }
 
 
