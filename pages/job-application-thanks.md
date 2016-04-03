@@ -4,10 +4,12 @@ title:
 header: Thank You!
 ---
 
-**Your application has been submitted.**
-
-**For more information, please contact us:**
+<div class="cc-FormThanks">
+  <ul>
+    <li>Your application has been submitted.</li>
+    <li>For more information, please contact us:</li>
+  </ul>
+</div>
 
 {% include contact_info.html %}
-
 

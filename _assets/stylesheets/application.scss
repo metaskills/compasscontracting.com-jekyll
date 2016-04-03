@@ -506,3 +506,12 @@ $form-input-border: 1px solid #ddd;
   }
 }
 
+.cc-FormThanks {
+  font-size: 18px;
+  border: 2px solid green;
+  width: 450px;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  p:last-child,
+  ul:last-child { margin-bottom: 0; }
+}
