@@ -119,15 +119,15 @@ header: Job Application
   <section class="cc-FormSection">
     <h5>Employment Desired</h5>
     <fieldset>
-      <label for="name">Position:</label>
+      <label for="position">Position:</label>
       <input type="text" id="position" name="position" />
     </fieldset>
     <fieldset>
-      <label for="name">When can you start:</label>
+      <label for="start-date">When can you start:</label>
       <input type="text" id="start-date" name="start-date" />
     </fieldset>
     <fieldset>
-      <label for="name">Salary Desired:</label>
+      <label for="salary-desired">Salary Desired:</label>
       <input type="text" id="salary-desired" name="salary-desired" />
     </fieldset>
     <fieldset class="cc-fieldsetLabeless cc-fieldsetLabeless--topped">
@@ -174,8 +174,37 @@ header: Job Application
     </fieldset>
   </section>
 
+  <section class="cc-FormSection">
+    <h5>General</h5>
+    <fieldset>
+      <label for="special-training">Special Training:</label>
+      <input type="text" id="special-training" name="special-training" />
+    </fieldset>
+    <fieldset>
+      <label for="special-skills">Special Skills:</label>
+      <input type="text" id="special-skills" name="special-skills" />
+    </fieldset>
+  </section>
+
+  <section class="cc-FormSection">
+    <h5>Former Employers</h5>
+    {% for i in (1..2) %}
+      <fieldset>
+        <label for="employers-name-{{forloop.index}}">Employer's Name:</label>
+        <input type="text" id="employers-name-{{forloop.index}}" name="employers-name-{{forloop.index}}" />
+      </fieldset>
+      {% unless forloop.index == forloop.length %}
+        <hr class="cc-FormRule">
+      {% endunless %}
+    {% endfor %}
+  </section>
 
     <!--
+
+    <fieldset>
+      <label for="XXX">XXX:</label>
+      <input type="text" id="XXX" name="XXX" />
+    </fieldset>
 
     <fieldset class="cc-fieldsetLabeless">
       <span>XXX?</span>
@@ -186,7 +215,6 @@ header: Job Application
         <label for="XXX-no" class="cc-radioLabel">NO</label>
       </div>
     </fieldset>
-
 
     <fieldset class="cc-fieldsetLabeless">
       <span>XXX?</span>
